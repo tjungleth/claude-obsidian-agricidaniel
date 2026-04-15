@@ -6,6 +6,15 @@ This folder is both a Claude Code plugin and an Obsidian vault.
 **Skills:** `/wiki`, `/wiki-ingest`, `/wiki-query`, `/wiki-lint`
 **Vault path:** This directory (open in Obsidian directly)
 
+## User context
+
+- **Name:** Tony Jung
+- **Email:** tjung@lethcounty.ca
+- **Employer:** Lethbridge County
+- **Role:** Lead, Continuous Improvement
+- **Current focus:** project focused: Grader Route Optimization, Bank Reconciliation App/Tool, Databricks Platform Implementation, ERP Migration RFP, SharePoint Migration, want to use Obsidian to better manage complex projects for best outcomes possible
+- **Preferences:** New to Obsidian but a quick learner. Prefer small, careful changes. Show diffs before committing. Briefly teach me the Obsidian or Markdown idea behind edits.
+
 ## What This Vault Is For
 
 This vault demonstrates the LLM Wiki pattern — a persistent, compounding knowledge base for Claude + Obsidian. Drop any source, ask any question, and the wiki grows richer with every session.
