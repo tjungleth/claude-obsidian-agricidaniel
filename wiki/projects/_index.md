@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Projects Index"
-updated: 2026-04-15
+updated: 2026-04-16
 tags:
   - meta
   - index
@@ -24,7 +24,7 @@ All project pages — ongoing initiatives with goals, stakeholders, and next act
 
 ## All Projects
 
-- [[Grader Route Optimization]] — (planning)
+- [[Road Intelligence Platform]] — (active) | 10 workstreams in `wiki/projects/road-intelligence-platform/`
 - [[Bank Reconciliation App]] — (planning)
 - [[Databricks Platform Implementation]] — (planning)
 - [[ERP Migration RFP]] — (planning)

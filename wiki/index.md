@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-04-15
+updated: 2026-04-16
 tags:
   - meta
   - index
@@ -24,7 +24,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-15 | Total pages: 33 | Sources ingested: 2
+Last updated: 2026-04-16 | Total pages: 52 | Sources ingested: 4
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -36,6 +36,12 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 - [[Hot Cache]] — ~500-word session context file, updated after every ingest and session (status: mature)
 - [[Compounding Knowledge]] — why wiki knowledge grows more valuable over time, unlike RAG (status: mature)
 - [[cherry-picks]] — prioritized feature backlog from ecosystem research; 13 features to add to claude-obsidian (status: current)
+- [[Deadhead Ratio]] — percentage of active engine time spent traveling without grading (status: mature)
+- [[Route Optimization]] — minimizing travel distance/time for vehicle routing problems (status: mature)
+- [[PyVRP]] — Python Vehicle Routing Problem solver using Hybrid Genetic Search (status: mature)
+- [[Demand-Driven Scheduling]] — priority-based grading frequency replacing fixed rotations (status: mature)
+- [[Facility Location]] — depot-to-demand optimization for grader camp placement (status: mature)
+- [[Fully Loaded Hard Savings]] — all-in cost metric: fuel + labour + depreciation + maintenance at 2.5x fuel (status: mature)
 
 ---
 
@@ -49,11 +55,16 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 - [[kepano-obsidian-skills]] — official skills from Obsidian creator; defuddle, obsidian-bases (status: current)
 - [[Claudian-YishenTu]] — native Obsidian plugin embedding Claude Code; plan mode, @mention (status: current)
 
+> [!NOTE] Road Intelligence Platform entities pending
+> Entity pages for Ryan Thomson (sponsor), Shawn (field validator), MG-048, and MG-051 are on hold pending a stakeholder meeting with Cody, Shawn, and Lee to gather org context before writing.
+
 ---
 
 ## Sources
 
 - [[claude-obsidian-ecosystem-research]] — 2026-04-08 | web research across 16+ repos | 8 wiki pages created
+- [[GPS Baseline Analysis]] — 2026-04-14 | GPS deadhead baseline for Lethbridge County grader fleet | 11 wiki pages
+- [[Road Intelligence Platform Comprehensive Findings]] — 2026-04-14 | Tier 1/2/3 optimization opportunities, $80K-$150K projection | 16 wiki pages
 
 ---
 
@@ -72,7 +83,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 
 ## Projects
 
-- [[Grader Route Optimization]] — Lethbridge County (status: planning)
+- [[Road Intelligence Platform]] — Lethbridge County grader fleet optimization, $80K-$150K projected fully loaded savings (status: active)
 - [[Bank Reconciliation App]] — Lethbridge County (status: planning)
 - [[Databricks Platform Implementation]] — Lethbridge County (status: planning)
 - [[ERP Migration RFP]] — Lethbridge County (status: planning)
