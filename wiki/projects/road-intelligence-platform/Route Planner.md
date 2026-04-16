@@ -15,6 +15,7 @@ tags:
 related:
   - "[[Route Optimization]]"
   - "[[PyVRP]]"
+  - "[[Capacitated Arc Routing]]"
   - "[[Deadhead Ratio]]"
   - "[[Spare Coordination]]"
   - "[[MG-048 Investigation]]"
@@ -27,7 +28,9 @@ sources:
 
 ## Summary
 
-The Route Planner is the highest-value workstream in the [[Road Intelligence Platform]]. It uses [[PyVRP]] to generate fuel-minimized daily grading sequences for each division, replacing experience-based manual route selection. The focus is the May to October grading season, where demand is highest and absolute savings per shift are greatest.
+The Route Planner is the highest-value workstream in the [[Road Intelligence Platform]]. It generates fuel-minimized daily grading sequences for each division, replacing experience-based manual route selection. The focus is the May to October grading season, where demand is highest and absolute savings per shift are greatest.
+
+Two solver approaches will be evaluated: [[PyVRP]] (node-based VRP with arc-to-node transformation) and a [[Capacitated Arc Routing|CARP solver]] (native arc routing). Both will be tested against the same input data to determine which produces shorter routes for grader operations.
 
 Estimated value: $15,000 to $35,000 per year in fuel savings; $40,000 to $90,000 in [[Fully Loaded Hard Savings|fully loaded terms]] (Report 2, Tier 1).
 
@@ -41,6 +44,27 @@ The planner builds optimized daily routes by:
 4. Producing a sequenced grading plan for the operator.
 
 The solver accounts for the grader's start depot (camp), return-to-camp requirement, and shift duration constraint.
+
+### Solver Comparison: PyVRP vs CARP
+
+Grader routing is fundamentally an [[Capacitated Arc Routing|arc routing problem]]: graders traverse road segments (arcs), not visit point locations (nodes). The current approach uses [[PyVRP]] with an arc-to-node transformation (representing each road segment as a node at its centroid). This is standard practice and produces good results, but it is an approximation.
+
+CMU research on snow plow routing ([[CMU Snow Plow Routing]]) showed that native CARP solutions produced routes **3% to 156% shorter** than VRP-based commercial software.
+
+**Evaluation plan:**
+
+| Approach | Solver | Problem class | Status |
+|---|---|---|---|
+| A (current) | [[PyVRP]] | VRP with arc-to-node transformation | Implementation in progress |
+| B (evaluate) | CARP solver (Hexaly, custom, or open-source) | Native arc routing | To be evaluated against Approach A |
+
+**Test protocol:**
+1. Use the same input data for both: road segments, camp locations, shift constraints, cost matrix
+2. Run both solvers on one division's daily workload
+3. Compare: total deadhead km, total route time, fuel estimate
+4. If CARP is materially better (>5% reduction in deadhead), adopt or offer as an alternative mode
+
+The evaluation does not block Sprint 4 delivery. PyVRP launches first; CARP evaluation runs in parallel or immediately after the pilot.
 
 ## Estimated Value
 
@@ -76,8 +100,13 @@ From the 2026 combined projection (Report 2, fuel only):
 - [ ] Build road-network cost matrix from GIS data
 - [ ] Request GIS priority layer (High/Medium/Low per segment)
 - [ ] Schedule field team meeting (Cody, Shawn, Lee) for operational input
+- [ ] Identify candidate CARP solver (Hexaly, open-source, or custom implementation)
+- [ ] Run CARP vs PyVRP comparison on one division's daily workload
+- [ ] Decision: adopt CARP, keep PyVRP, or offer both as modes
 
 ## Sources
 
 - [[GPS Baseline Analysis]] — "Build the daily route optimization tool that generates fuel-minimized grading sequences for each operator, starting from their camp" (recommendation #3)
 - [[Road Intelligence Platform Comprehensive Findings]] — Route optimization (PyVRP), $15,000 to $35,000/yr fuel, $40,000 to $90,000 fully loaded, Sprint 4 June (Tier 1 table); "Start with one willing division" (recommendation #4)
+- [[CMU Snow Plow Routing]] — constraint programming CARP produced 3-156% shorter routes than commercial VRP software
+- [[Research Municipal Fleet Route Optimization Case Studies]] — synthesis: CARP vs VRP is the key technical finding for grader routing
