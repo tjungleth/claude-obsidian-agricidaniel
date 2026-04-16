@@ -24,7 +24,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-16 | Total pages: 51 | Sources ingested: 4
+Last updated: 2026-04-16 | Total pages: 58 | Sources ingested: 8
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -42,6 +42,7 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 - [[Demand-Driven Scheduling]] — priority-based grading frequency replacing fixed rotations (status: mature)
 - [[Facility Location]] — depot-to-demand optimization for grader camp placement (status: mature)
 - [[Fully Loaded Hard Savings]] — all-in cost metric: fuel + labour + depreciation + maintenance at 2.5x fuel (status: mature)
+- [[Capacitated Arc Routing]] — arc-based counterpart to VRP; models grader/plow routing as segment traversal, not point visits (status: mature)
 
 ---
 
@@ -65,12 +66,17 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 - [[claude-obsidian-ecosystem-research]] — 2026-04-08 | web research across 16+ repos | 8 wiki pages created
 - [[GPS Baseline Analysis]] — 2026-04-14 | GPS deadhead baseline for Lethbridge County grader fleet | 11 wiki pages
 - [[Road Intelligence Platform Comprehensive Findings]] — 2026-04-14 | Tier 1/2/3 optimization opportunities, $80K-$150K projection | 16 wiki pages
+- [[Baltimore County Fleet Telematics]] — 2013 | GPS dispatch for public works, $354K savings in 6 months
+- [[CMU Snow Plow Routing]] — academic | constraint programming CARP, 3-156% shorter routes vs commercial software
+- [[UK Winter Road Maintenance RL]] — 2026 | RL + VRP for salt spreading, multi-depot allocation
+- [[TAC Canadian Gravel Road Survey]] — 2018 | 97 municipalities, 40,000 km gravel, recommends GRMS
 
 ---
 
 ## Questions
 
 - [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)
+- [[Research Municipal Fleet Route Optimization Case Studies]] — no grader-specific case studies exist; CARP vs VRP is the key technical finding (status: developing)
 
 ---
 

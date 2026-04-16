@@ -38,6 +38,13 @@ Navigation: [[index]] | [[log]] | [[overview]]
 - **Hooks**: PostToolUse auto-commit is now **opt-in** via `CLAUDE_OBSIDIAN_AUTO_COMMIT=1` (changed 2026-04-15)
 - **Skills**: 10 (wiki, wiki-ingest, wiki-query, wiki-lint, save, autoresearch, canvas, defuddle, obsidian-bases, obsidian-markdown)
 
+## Autoresearch: Municipal Fleet Route Optimization (2026-04-16)
+- No grader-specific route optimization case study exists in the published literature
+- Closest: Baltimore County ($354K/6mo from GPS dispatch), CMU snow plow CARP (3-156% shorter routes)
+- **CARP vs VRP**: grader routing is fundamentally arc routing (traverse segments), not node routing (visit locations). PyVRP uses arc-to-node transformation, which works but is approximate. Native CARP solvers may produce tighter solutions.
+- 60% of Canada's public roads are unpaved; 97 municipalities surveyed lack comprehensive gravel road management
+- Synthesis page: [[Research Municipal Fleet Route Optimization Case Studies]]
+
 ## Key Lessons
 1. **Verify every number against source before writing.** Summary paragraphs in reports can conflict with their own per-row data. Prefer granular data. Three wrong numbers in the first concept page's Examples table prompted this rule.
 2. PostToolUse auto-commit hook was firing on every Write/Edit, sweeping unrelated files into commits. Fixed by gating on `CLAUDE_OBSIDIAN_AUTO_COMMIT=1`. Old hook is cached for the session it was loaded in; fix takes effect on next session.

@@ -25,6 +25,15 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-04-16] autoresearch | Municipal Fleet Route Optimization Case Studies
+
+- Rounds: 2
+- Searches: 7
+- Sources found: 4 (Baltimore County, CMU SPRP, UK RL study, TAC gravel survey)
+- Pages created: [[Baltimore County Fleet Telematics]], [[CMU Snow Plow Routing]], [[UK Winter Road Maintenance RL]], [[TAC Canadian Gravel Road Survey]], [[Capacitated Arc Routing]], [[Research Municipal Fleet Route Optimization Case Studies]]
+- Synthesis: [[Research Municipal Fleet Route Optimization Case Studies]]
+- Key finding: no grader-specific route optimization case study exists in the published literature. Grader routing is a CARP (arc routing) problem, not a standard VRP. The RIP may be the first GPS-based grader fleet optimization in a Canadian municipality.
+
 ## [2026-04-16] complete | Road Intelligence Platform — Full Ingestion
 
 - Type: project ingest (complete)
