@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-04-08T19:00:00
+updated: 2026-04-16
 tags:
   - meta
   - hot-cache
@@ -11,7 +11,7 @@ related:
   - "[[log]]"
   - "[[Wiki Map]]"
   - "[[getting-started]]"
-  - "[[claude-obsidian-v1.4-release-session]]"
+  - "[[Road Intelligence Platform]]"
 ---
 
 # Recent Context
@@ -19,50 +19,39 @@ related:
 Navigation: [[index]] | [[log]] | [[overview]]
 
 ## Last Updated
-2026-04-08: v1.4.1 hotfix shipped, plugin confirmed installed and enabled
+2026-04-16: Road Intelligence Platform fully ingested (6 concepts, 10 workstreams, 2 sources, anchor page)
+
+## Road Intelligence Platform (Active Project)
+- **Anchor**: [[Road Intelligence Platform]]
+- **Status**: active, 24 files committed, pushed to origin
+- **Source reports**: 2 PDFs dated 2026-04-14 (GPS Baseline Analysis + Comprehensive Findings), both `status: complete` in manifest
+- **Sponsor**: [[Ryan Thomson]], Director, Public Works & Utilities
+- **Key metric**: 24.9% fleet deadhead ratio, $55K-$65K/yr fuel, $140K-$165K/yr fully loaded
+- **2026 projection**: $33K-$61K fuel / $80K-$150K fully loaded
+- **Gold standard KPI**: road integrity duration after grading (quality of the grading itself)
+- **Workstreams**: 3 Tier 1 (Route Planner, Spare Coordination, MG-048 Investigation), 3 Tier 2 (Div 1 Depot Staging, Demand-Driven Scheduling, Dust Control Coordination), 1 dashboard, 3 Tier 3 concept stubs
+- **Entity pages on hold**: pending stakeholder meeting with Cody, Shawn, and Lee
+- **Pending source material**: project folder on old laptop (to be ingested as `status: "historical"` when accessible)
 
 ## Plugin State
 - **Version**: 1.4.1 (installed, enabled, user scope)
-- **Install ID**: `claude-obsidian@claude-obsidian-marketplace`
-- **Releases**: v1.1, v1.4.0, v1.4.1 on GitHub
+- **Hooks**: PostToolUse auto-commit is now **opt-in** via `CLAUDE_OBSIDIAN_AUTO_COMMIT=1` (changed 2026-04-15)
 - **Skills**: 10 (wiki, wiki-ingest, wiki-query, wiki-lint, save, autoresearch, canvas, defuddle, obsidian-bases, obsidian-markdown)
-- **Hooks**: 4 (SessionStart, PostCompact, PostToolUse, Stop)
-- **Multi-agent**: bootstrap files for Codex, OpenCode, Gemini, Cursor, Windsurf, GitHub Copilot
 
-## Install Command (Correct Two-Step Flow)
-```bash
-claude plugin marketplace add AgriciDaniel/claude-obsidian
-claude plugin install claude-obsidian@claude-obsidian-marketplace
-```
-
-There is no `claude plugin install github:owner/repo` shortcut. Both steps are required. Full session note: [[claude-obsidian-v1.4-release-session]].
-
-## Recent Release Cycle (v1.1 → v1.4.1)
-- **v1.1**: URL ingestion, vision ingestion, delta tracking manifest, 3 new skills (defuddle, obsidian-bases, obsidian-markdown), multi-depth query modes, PostToolUse auto-commit, removed invalid `allowed-tools` frontmatter field
-- **v1.4.0**: Dataview to Bases migration (new `wiki/meta/dashboard.base`), Canvas JSON 1.0 spec completeness, PostCompact hook, Obsidian CLI MCP option, 6 multi-agent bootstrap files, 249 em dashes scrubbed, security git history rewrite to remove placeholder email
-- **v1.4.1**: hotfix for wrong plugin install command syntax in README and install-guide.md
-
-## Key Lessons (Recent)
-1. Plugin install is always two-step: `marketplace add` then `install plugin@marketplace`
-2. `allowed-tools` is NOT valid in skill frontmatter. Use only `name` and `description` (kepano convention).
-3. Obsidian Bases uses `filters/views/formulas`, not Dataview `from/where`
-4. Canvas edges have asymmetric defaults: `fromEnd="none"`, `toEnd="arrow"`
-5. Hook-injected context does not survive compaction. PostCompact hook is required to restore hot cache.
-6. `git filter-repo` needs two passes: `--replace-text` for blobs, `--replace-message` for commit messages
+## Key Lessons
+1. **Verify every number against source before writing.** Summary paragraphs in reports can conflict with their own per-row data. Prefer granular data. Three wrong numbers in the first concept page's Examples table prompted this rule.
+2. PostToolUse auto-commit hook was firing on every Write/Edit, sweeping unrelated files into commits. Fixed by gating on `CLAUDE_OBSIDAN_AUTO_COMMIT=1`. Old hook is cached for the session it was loaded in; fix takes effect on next session.
+3. `pdftotext` (from MinGW) works for text extraction on Windows. `pdfplumber` and `pymupdf` now also installed.
+4. Git squash workflow (Approach A): accept auto-commits during session, `git reset --mixed origin/main` at end, stage intended files only, commit with clean message.
 
 ## Style Preferences (Saved to Memory)
-- **No em dashes** (U+2014) or `--` as punctuation anywhere. Use periods, commas, colons, or parentheses. Hyphens in compound words are fine (auto-commit, multi-agent).
-- Keep responses short and direct. No trailing "here's what I did" summaries.
-- Parallel tool calls when independent.
-
-## Ecosystem Research (Done 2026-04-08)
-16+ Claude + Obsidian projects mapped. Full feature matrix at [[claude-obsidian-ecosystem]]. Prioritized backlog at [[cherry-picks]]. Top competitors: [[Ar9av-obsidian-wiki]] (multi-agent + delta tracking), [[rvk7895-llm-knowledge-bases]] (multi-depth query), [[ballred-obsidian-claude-pkm]] (goal cascade + auto-commit), [[kepano-obsidian-skills]] (authoritative Obsidian skills from Obsidian's own creator).
-
-## Active Threads
-- v1.5.0 backlog: `/adopt` command, vault graph analysis in wiki-lint, semantic search via qmd, Marp output
-- `community` remote (`avalonreset-pro/claude-obsidian`) still has pre-rewrite history. Force-push needed next time that remote is configured.
+- **No em dashes** (U+2014) or `--` as punctuation anywhere. Use periods, commas, colons, or parentheses. Hyphens in compound words are fine.
+- Keep responses short and direct. No trailing summaries.
+- Diff before every write to vault config/meta files.
+- Briefly teach Obsidian/Markdown idioms when using new syntax.
+- One file per write. Pause between clusters for review.
 
 ## Repo Locations
-- Working: `~/Desktop/claude-obsidian/`
-- Public: https://github.com/AgriciDaniel/claude-obsidian
-- Community (private): https://github.com/avalonreset-pro/claude-obsidian
+- Working vault: `C:\Users\tjung\Documents\vault`
+- Public: https://github.com/tjungleth/claude-obsidian-agricidaniel
+- Upstream: https://github.com/AgriciDaniel/claude-obsidian

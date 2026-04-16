@@ -29,8 +29,21 @@
       "authoring_date": "2026-04-14",
       "project": "Road Intelligence Platform",
       "description": "GPS Baseline Analysis / Grader Fleet Deadhead Report (367 days, 1.52M breadcrumbs, 9 graders, 24.9% deadhead baseline)",
-      "status": "pending",
-      "produced_pages": []
+      "status": "complete",
+      "produced_pages": [
+        "wiki/projects/Road Intelligence Platform.md",
+        "wiki/concepts/Deadhead Ratio.md",
+        "wiki/concepts/Route Optimization.md",
+        "wiki/concepts/PyVRP.md",
+        "wiki/concepts/Facility Location.md",
+        "wiki/concepts/Fully Loaded Hard Savings.md",
+        "wiki/projects/road-intelligence-platform/Route Planner.md",
+        "wiki/projects/road-intelligence-platform/Spare Coordination.md",
+        "wiki/projects/road-intelligence-platform/MG-048 Investigation.md",
+        "wiki/projects/road-intelligence-platform/Division 1 Depot Staging.md",
+        "wiki/projects/road-intelligence-platform/Fleet Efficiency Dashboard.md",
+        "wiki/sources/GPS Baseline Analysis.md"
+      ]
     },
     {
       "path": ".raw/projects/road-intelligence-platform/2026-04-14-road-intelligence-platform-comprehensive-findings.pdf",
@@ -39,8 +52,27 @@
       "authoring_date": "2026-04-14",
       "project": "Road Intelligence Platform",
       "description": "Road Intelligence Platform Comprehensive Findings (Tier 1/2/3 opportunities, $80K conservative / $150K moderate annual fully-loaded projection)",
-      "status": "pending",
-      "produced_pages": []
+      "status": "complete",
+      "produced_pages": [
+        "wiki/projects/Road Intelligence Platform.md",
+        "wiki/concepts/Deadhead Ratio.md",
+        "wiki/concepts/Route Optimization.md",
+        "wiki/concepts/PyVRP.md",
+        "wiki/concepts/Demand-Driven Scheduling.md",
+        "wiki/concepts/Facility Location.md",
+        "wiki/concepts/Fully Loaded Hard Savings.md",
+        "wiki/projects/road-intelligence-platform/Route Planner.md",
+        "wiki/projects/road-intelligence-platform/Spare Coordination.md",
+        "wiki/projects/road-intelligence-platform/MG-048 Investigation.md",
+        "wiki/projects/road-intelligence-platform/Division 1 Depot Staging.md",
+        "wiki/projects/road-intelligence-platform/Demand-Driven Scheduling.md",
+        "wiki/projects/road-intelligence-platform/Dust Control Coordination.md",
+        "wiki/projects/road-intelligence-platform/Fleet Efficiency Dashboard.md",
+        "wiki/projects/road-intelligence-platform/Weather-Responsive Scheduling.md",
+        "wiki/projects/road-intelligence-platform/Grader Performance Score.md",
+        "wiki/projects/road-intelligence-platform/Treatment Optimization.md",
+        "wiki/sources/Road Intelligence Platform Comprehensive Findings.md"
+      ]
     }
   ]
 }
