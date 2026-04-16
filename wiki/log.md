@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-04-08
+updated: 2026-04-16
 tags:
   - meta
   - log
@@ -25,6 +25,28 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-04-16] complete | Road Intelligence Platform — Full Ingestion
+
+- Type: project ingest (complete)
+- Source: `.raw/projects/road-intelligence-platform/` (2 PDFs, both now `status: complete` in manifest)
+- **Pages created (20)**: 6 concepts ([[Deadhead Ratio]], [[Route Optimization]], [[PyVRP]], [[Demand-Driven Scheduling]], [[Facility Location]], [[Fully Loaded Hard Savings]]), 10 workstreams (3 Tier 1, 3 Tier 2, 1 dashboard, 3 Tier 3 stubs), 2 source pages, 1 anchor page ([[Road Intelligence Platform]])
+- **Pages deleted (1)**: [[Grader Route Optimization]] stub (replaced by Road Intelligence Platform anchor)
+- **Index updates**: wiki/index.md, wiki/concepts/_index.md, wiki/sources/_index.md, wiki/projects/_index.md
+- **Infrastructure**: master manifest (`.raw/.manifest.json`), workstream template (`_templates/workstream.md`)
+- Key data: 24.9% fleet deadhead baseline, $55K-$65K fuel, $140K-$165K fully loaded, 2026 projection $33K-$61K fuel / $80K-$150K fully loaded
+- Gold standard KPI: road integrity duration after grading
+- Entity pages (Ryan Thomson, Shawn, MG-048, MG-051) on hold pending stakeholder meeting with Cody, Shawn, Lee
+- Pending: project folder on old laptop (to be ingested as `status: "historical"`)
+- Vault health: 51 pages, zero orphans, 3 expected red links (held entity pages)
+
+## [2026-04-15] session | Road Intelligence Platform — Setup and Interview Start
+
+- Type: session
+- Vault setup: CLAUDE.md user context, 5 project stubs, upstream remote added, git lessons (remotes, fetch vs pull, A..B range syntax)
+- Auto-commit hook fix: PostToolUse gated on `CLAUDE_OBSIDIAN_AUTO_COMMIT=1` (default off)
+- Interview approach started then abandoned: source PDFs already had executive-grade content, interview was wrong method
+- Errors caught: 3 factual errors in Deadhead Ratio draft (wrong month, wrong seasonal ranges) from drafting off memory instead of re-reading source. Rule installed: verify every number against the source passage at write time.
+- pdfplumber + pymupdf installed for future PDF extraction
 ## [2026-04-08] save | claude-obsidian v1.4 Release Session
 - Type: session
 - Location: wiki/meta/claude-obsidian-v1.4-release-session.md
