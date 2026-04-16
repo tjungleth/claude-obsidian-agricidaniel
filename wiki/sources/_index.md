@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-04-07
+updated: 2026-04-16
 tags:
   - meta
   - index
@@ -22,8 +22,16 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 
 ---
 
-## Transcripts
+## Internal Reports
 
+- [[GPS Baseline Analysis]] — 2026-04-14 | GPS deadhead baseline, fleet ranking, seasonal patterns, 5 recommendations
+- [[Road Intelligence Platform Comprehensive Findings]] — 2026-04-14 | MG-048 deep dive, overlap analysis, Tier 1/2/3 opportunities, 2026 projection
+
+---
+
+## Web Research
+
+- [[claude-obsidian-ecosystem-research]] — 2026-04-08 | 16+ Claude + Obsidian projects, 8 wiki pages created
 
 ---
 

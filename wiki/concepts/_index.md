@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Concepts Index"
-updated: 2026-04-07
+updated: 2026-04-16
 tags:
   - meta
   - index
@@ -33,6 +33,17 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 - [[LLM Wiki Pattern]] — the core architecture for persistent, compounding knowledge bases
 - [[Hot Cache]] — ~500-word session context file, updated after every ingest
 - [[Compounding Knowledge]] — why the wiki grows more valuable over time, unlike RAG
+
+---
+
+## Fleet Operations (Road Intelligence Platform)
+
+- [[Deadhead Ratio]] — percentage of active engine time spent traveling without grading; fleet baseline 24.9%
+- [[Route Optimization]] — minimizing travel distance/time for vehicle routing problems
+- [[PyVRP]] — Python VRP solver using Hybrid Genetic Search; core tool for Route Planner workstream
+- [[Demand-Driven Scheduling]] — priority-based grading frequency replacing fixed rotations
+- [[Facility Location]] — depot-to-demand optimization for grader camp placement
+- [[Fully Loaded Hard Savings]] — all-in cost metric: fuel + labour + depreciation + maintenance at ~2.5x fuel
 
 ---
 
