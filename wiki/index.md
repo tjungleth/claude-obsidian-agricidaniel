@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-04-07
+updated: 2026-04-15
 tags:
   - meta
   - index
@@ -15,6 +15,7 @@ related:
   - "[[concepts/_index]]"
   - "[[entities/_index]]"
   - "[[sources/_index]]"
+  - "[[projects/_index]]"
   - "[[LLM Wiki Pattern]]"
   - "[[Hot Cache]]"
   - "[[Compounding Knowledge]]"
@@ -23,7 +24,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-08 | Total pages: 26 | Sources ingested: 2
+Last updated: 2026-04-15 | Total pages: 33 | Sources ingested: 2
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -66,6 +67,16 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 
 - [[Wiki vs RAG]] — when to use a wiki knowledge base versus RAG; verdict: wiki wins at <1000 pages
 - [[claude-obsidian-ecosystem]] — feature matrix of 16+ Claude+Obsidian projects; where claude-obsidian wins and gaps
+
+---
+
+## Projects
+
+- [[Grader Route Optimization]] — Lethbridge County (status: planning)
+- [[Bank Reconciliation App]] — Lethbridge County (status: planning)
+- [[Databricks Platform Implementation]] — Lethbridge County (status: planning)
+- [[ERP Migration RFP]] — Lethbridge County (status: planning)
+- [[SharePoint Migration]] — Lethbridge County (status: planning)
 
 ---
 

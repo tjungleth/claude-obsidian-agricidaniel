@@ -12,7 +12,7 @@ This folder is both a Claude Code plugin and an Obsidian vault.
 - **Email:** tjung@lethcounty.ca
 - **Employer:** Lethbridge County
 - **Role:** Lead, Continuous Improvement
-- **Current focus:** project focused: Grader Route Optimization, Bank Reconciliation App/Tool, Databricks Platform Implementation, ERP Migration RFP, SharePoint Migration, want to use Obsidian to better manage complex projects for best outcomes possible
+- **Current focus:** project focused: [[Grader Route Optimization]], [[Bank Reconciliation App]], [[Databricks Platform Implementation]], [[ERP Migration RFP]], [[SharePoint Migration]]. Want to use Obsidian to better manage complex projects for best outcomes possible.
 - **Preferences:** New to Obsidian but a quick learner. Prefer small, careful changes. Show diffs before committing. Briefly teach me the Obsidian or Markdown idea behind edits.
 
 ## What This Vault Is For
