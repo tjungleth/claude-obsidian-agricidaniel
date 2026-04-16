@@ -40,7 +40,7 @@ Navigation: [[index]] | [[log]] | [[overview]]
 
 ## Key Lessons
 1. **Verify every number against source before writing.** Summary paragraphs in reports can conflict with their own per-row data. Prefer granular data. Three wrong numbers in the first concept page's Examples table prompted this rule.
-2. PostToolUse auto-commit hook was firing on every Write/Edit, sweeping unrelated files into commits. Fixed by gating on `CLAUDE_OBSIDAN_AUTO_COMMIT=1`. Old hook is cached for the session it was loaded in; fix takes effect on next session.
+2. PostToolUse auto-commit hook was firing on every Write/Edit, sweeping unrelated files into commits. Fixed by gating on `CLAUDE_OBSIDIAN_AUTO_COMMIT=1`. Old hook is cached for the session it was loaded in; fix takes effect on next session.
 3. `pdftotext` (from MinGW) works for text extraction on Windows. `pdfplumber` and `pymupdf` now also installed.
 4. Git squash workflow (Approach A): accept auto-commits during session, `git reset --mixed origin/main` at end, stage intended files only, commit with clean message.
 

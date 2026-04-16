@@ -24,7 +24,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-16 | Total pages: 52 | Sources ingested: 4
+Last updated: 2026-04-16 | Total pages: 51 | Sources ingested: 4
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -84,6 +84,10 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 ## Projects
 
 - [[Road Intelligence Platform]] — Lethbridge County grader fleet optimization, $80K-$150K projected fully loaded savings (status: active)
+  - **Tier 1**: [[Route Planner]] | [[Spare Coordination]] | [[MG-048 Investigation]]
+  - **Tier 2**: [[Division 1 Depot Staging]] | [[Demand-Driven Scheduling]] | [[Dust Control Coordination]]
+  - **Dashboard**: [[Fleet Efficiency Dashboard]]
+  - **Tier 3**: [[Weather-Responsive Scheduling]] | [[Grader Performance Score]] | [[Treatment Optimization]]
 - [[Bank Reconciliation App]] — Lethbridge County (status: planning)
 - [[Databricks Platform Implementation]] — Lethbridge County (status: planning)
 - [[ERP Migration RFP]] — Lethbridge County (status: planning)
