@@ -59,8 +59,19 @@ This establishes the pattern for future sessions: **reports provide the analytic
 3. **Build order matters.** Concepts first (no dependencies), then workstreams (link to concepts), then anchor last (links to everything). Leaves-first, trunk-last.
 4. **pdftotext table extraction is unreliable.** Installed pdfplumber + pymupdf for future use. Always reconstruct table alignment logically (sum checks, set membership) rather than trusting visual layout from pdftotext.
 
+## Autoresearch: Municipal Fleet Route Optimization Case Studies
+
+After the ingestion was complete, an autoresearch loop was run on "municipal fleet route optimization case studies" to find external precedents for the RIP approach. 2 rounds, 7 searches, 6 pages created.
+
+**Key finding**: no grader-specific route optimization case study exists in the published literature. The RIP may be the first GPS-based grader fleet optimization in a Canadian municipality. The closest precedent is Baltimore County, MD ($354K savings in 6 months from GPS dispatch).
+
+**CARP vs VRP**: the most significant technical finding. Grader routing is fundamentally a [[Capacitated Arc Routing|Capacitated Arc Routing Problem]] (traverse road segments) rather than a standard VRP (visit point locations). The [[Route Planner]] was updated to evaluate both [[PyVRP]] (current, arc-to-node transformation) and a native CARP solver in parallel. CMU research showed CARP routes were 3-156% shorter than VRP-based commercial software.
+
+Synthesis page: [[Research Municipal Fleet Route Optimization Case Studies]]
+
 ## Pending
 
 - Entity pages (after Cody/Shawn/Lee meeting)
 - Old laptop project folder (to ingest as `status: "historical"` when accessible)
+- CARP solver evaluation (identify candidate, run comparison on one division)
 - 4 other project stubs (Bank Reconciliation App, Databricks, ERP Migration, SharePoint) untouched
