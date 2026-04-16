@@ -8,8 +8,12 @@ Plugin hooks for the claude-obsidian wiki vault. All hooks are defined in `hooks
 |---|---|---|
 | `SessionStart` | command + prompt | Loads `wiki/hot.md` into context. Command type runs `[ -f wiki/hot.md ] && cat wiki/hot.md` as the canonical safety check (works for non-vault sessions without erroring). Prompt type complements with semantic context restoration. Matcher: `startup\|resume`. |
 | `PostCompact` | prompt | Re-loads `wiki/hot.md` after context compaction. Hook-injected context does NOT survive compaction (only `CLAUDE.md` does), so this hook restores the hot cache mid-session. |
-| `PostToolUse` | command | Auto-commits any wiki/ or .raw/ changes after Write or Edit tool calls. Guarded by `[ -d .git ]` so it never errors in non-git directories, and by `git diff --cached --quiet` so it never creates empty commits. |
+| `PostToolUse` | command | Auto-commits any wiki/ or .raw/ changes after Write or Edit tool calls. **Opt-in** via `CLAUDE_OBSIDIAN_AUTO_COMMIT=1` (see below). Also guarded by `[ -d .git ]` (no error in non-git dirs) and `git diff --cached --quiet` (no empty commits). |
 | `Stop` | prompt | Updates `wiki/hot.md` at the end of every Claude response with a brief summary of what changed. |
+
+## Opt-in Auto-Commit
+
+The `PostToolUse` auto-commit is disabled by default. Set `CLAUDE_OBSIDIAN_AUTO_COMMIT=1` in your environment (in `.envrc`, a shell profile, or per-session) to enable it. Auto-commits help during ingestion sessions where many wiki pages are created in sequence and per-file checkpoints provide a safety net. They are noisy during deliberate multi-file edits, because each `Write` or `Edit` produces its own commit and `git add wiki/ .raw/` can sweep unrelated modified files in. Leave the flag unset when you want explicit control over commit boundaries; set it when you want automatic snapshots.
 
 ## Known Issue: Plugin Hooks STDOUT Bug
 
