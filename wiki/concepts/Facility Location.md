@@ -24,6 +24,11 @@ sources:
 
 # Facility Location
 
+> [!important] Measured update (2026-04-16)
+> The Fabric pipeline replaces the PDF estimates on this page with measured values from 2 years of GPS data. Headline: **grader deadhead 31.8%**, fleet-wide 43.1%. Grader deadhead fuel ~$46K/yr. MG-051 (Div 1) measures **43.6% deadhead** — the worst in the fleet, which confirms and intensifies the depot-misalignment case. See [[GPS Baseline Results 2026-04-16]].
+>
+> Division correction: MG-046 is Div 2 (not Div 3 as Titan labeled). Table below corrected.
+
 ## Definition
 
 The facility location problem asks: given a set of demand points (road segments needing service), where should service facilities (grader camps/depots) be placed to minimize total travel between depots and demand?
@@ -53,7 +58,7 @@ Per-grader camp distances from the 2026 baseline (Report 2, §4):
 |---|---|---|---|
 | MG-048 | Div 5 | 0.1 km | 99% |
 | MG-047 | Div 6 | 0.5 km | 100% |
-| MG-046 | Div 3 | 1.4 km | 95% |
+| MG-046 | Div 2 | 1.4 km | 95% |
 | MG-041 | Spare | 3.2 km | 81% |
 | [[MG-051]] | Div 1 | 6.2 km | 96% |
 

@@ -54,7 +54,7 @@ A 2018 TAC survey of 97 Canadian municipalities managing ~40,000 km of gravel ro
 
 ### 6. Industry benchmarks for idle time and deadhead
 
-Heavy equipment fleets typically find 20-30% of engine hours are spent idling. The RIP's 24.9% [[Deadhead Ratio]] is consistent with this benchmark, confirming the fleet is not an outlier but rather representative of the optimization opportunity available to most municipal grader fleets.
+Heavy equipment fleets typically find 20-30% of engine hours are spent idling. The RIP's **measured 31.8% grader [[Deadhead Ratio]]** (per [[GPS Baseline Results 2026-04-16]], superseding the April 14 PDF's 24.9% estimate) is slightly above the typical range, confirming the fleet sits at the upper end of the optimization opportunity. Fleet-wide (including trucks) the measured ratio is 43.1%.
 
 ## Key Concepts
 
@@ -69,7 +69,7 @@ None found between sources. The case studies and academic papers are consistent:
 ## Open Questions
 
 1. **CARP vs VRP for the Route Planner**: would a native CARP solver produce materially better routes than the current PyVRP arc-to-node approach? The CMU paper's 3-156% range is wide. Testing with Lethbridge County data would answer this.
-2. **No grader-specific benchmarks**: all case studies are snow plow, transit, or general fleet. The RIP's 24.9% deadhead baseline may be the first published grader-specific measurement in a Canadian municipality.
+2. **No grader-specific benchmarks**: all case studies are snow plow, transit, or general fleet. The RIP's **measured 31.8% grader deadhead baseline** (per [[GPS Baseline Results 2026-04-16]]) may be the first published grader-specific measurement in a Canadian municipality.
 3. **Road integrity as an optimization objective**: no case study optimizes for road durability after grading (Tony's gold standard KPI). This is genuinely novel and would be publishable if measured.
 4. **Scalability of RL approaches**: the UK study's PPO agent worked on 1,515 treatment edges. Lethbridge County has 3,097 road segments. Would the approach scale?
 5. **Calgary fleet management**: AssetWorks case study with City of Calgary exists but covers fleet/fuel management, not route optimization. Worth investigating for operational parallels.

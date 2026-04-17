@@ -24,6 +24,9 @@ sources:
 
 # PyVRP
 
+> [!important] Measured update (2026-04-16)
+> PDF estimates on this page (24.9% deadhead, $15-35K savings) are superseded. Measured **grader deadhead 31.8%** (fleet 43.1%). Revised savings from measured baseline: ~$14K/yr at 30% reduction, ~$18.5K/yr at 40%, across all graders including non-Route-Planner-eligible units. See [[GPS Baseline Results 2026-04-16]].
+
 ## Definition
 
 PyVRP is an open-source Python library for solving Vehicle Routing Problems (VRP). It implements the Hybrid Genetic Search (HGS) metaheuristic, which combines genetic algorithm population management with local search improvement.

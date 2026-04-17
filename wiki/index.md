@@ -24,7 +24,7 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-16 | Total pages: 58 | Sources ingested: 8
+Last updated: 2026-04-16 | Total pages: ~85 | Sources ingested: 19 (incl. 10 historical + Fabric pipeline output)
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
 
@@ -56,20 +56,44 @@ Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[
 - [[kepano-obsidian-skills]] — official skills from Obsidian creator; defuddle, obsidian-bases (status: current)
 - [[Claudian-YishenTu]] — native Obsidian plugin embedding Claude Code; plan mode, @mention (status: current)
 
-> [!NOTE] Road Intelligence Platform entities pending
-> Entity pages for Ryan Thomson (sponsor), Shawn (field validator), MG-048, and MG-051 are on hold pending a stakeholder meeting with Cody, Shawn, and Lee to gather org context before writing.
+### Road Intelligence Platform stakeholders
+
+- [[Ryan Thomson]] — Director, Public Works & Utilities (sponsor)
+- [[Shawn Ogertschnig]] — Manager, Public Operations (operational authority, source of division corrections + ground-truth maps)
+- [[Graham White]] — Manager, Technical Services (GIS owner)
+- [[Aaron Craig]] — Base Stabilization partner (owes road priority GIS layer, critical path)
+- [[Jesse]] — GIS co-owner (LC_Roads, dust control geocoding)
+- [[Cole Beck]] — CAO (informed, supportive)
+- [[Hailey Pinksen]] — finance-adjacent (UFA budget-pressure question)
+- [[Sean MacRae]] — on fuel / operational data distribution
+- [[Lee Martin]] — forwarded March 2026 grading maps (distinct from Cody and Cole)
+- [[Tyler Reiter]] — UFA Picture Butte agent (external)
+
+> [!NOTE] Cody entity still on hold
+> Entity pages for MG-048 / MG-051 / Cody remain to be written. The stakeholder meeting with Cody, Shawn, and Lee Martin is still pending. 9 stakeholder stubs were created 2026-04-16 based on available information; enrich as more context arrives.
 
 ---
 
 ## Sources
 
 - [[claude-obsidian-ecosystem-research]] — 2026-04-08 | web research across 16+ repos | 8 wiki pages created
-- [[GPS Baseline Analysis]] — 2026-04-14 | GPS deadhead baseline for Lethbridge County grader fleet | 11 wiki pages
-- [[Road Intelligence Platform Comprehensive Findings]] — 2026-04-14 | Tier 1/2/3 optimization opportunities, $80K-$150K projection | 16 wiki pages
-- [[Baltimore County Fleet Telematics]] — 2013 | GPS dispatch for public works, $354K savings in 6 months
-- [[CMU Snow Plow Routing]] — academic | constraint programming CARP, 3-156% shorter routes vs commercial software
-- [[UK Winter Road Maintenance RL]] — 2026 | RL + VRP for salt spreading, multi-depot allocation
-- [[TAC Canadian Gravel Road Survey]] — 2018 | 97 municipalities, 40,000 km gravel, recommends GRMS
+- [[GPS Baseline Results 2026-04-16]] — **authoritative measured baseline** | Fabric pipeline, 2 years, 2.67M breadcrumbs, grader deadhead 31.8%
+- [[GPS Baseline Analysis]] — 2026-04-14 PDF | deadhead baseline (superseded by Fabric pipeline)
+- [[Road Intelligence Platform Comprehensive Findings]] — 2026-04-14 PDF | Tier 1/2/3 opportunities (superseded)
+- [[PRD Road Intelligence Platform]] — 2026-04-14 | 50 user stories, 6 personas, full architecture
+- [[Road Intelligence Platform Refined Build Plan]] — 2026-04-14 | 5 sprints, 21 variables, 5-level stack
+- [[Road Intelligence Platform Build Plan]] — 2026-04-06 | original plan (superseded by Refined)
+- [[Financial Rebase]] — 2026-04-10 | UFA pricing + OEM telematics rebasing
+- [[GPS Baseline Analysis Spec]] — 2026-04-10 | pipeline implementation spec
+- [[GPS Pipeline Cowork Summary]] — 2026-04-10 | Fabric notebooks + lakehouse upload
+- [[Old Project CLAUDE Instructions]] — 2026-04-14 | laptop project's CLAUDE.md
+- [[Sent Email Data Requests 2026-04-14]] — 5 items to PW&U / GIS distribution
+- [[UFA Price and Division Correction Thread 2026-04-09]] — fuel lock-in + division corrections
+- [[Unit Fuel Rates Reconciliation]] — per-unit L/hr three-source cross-validation
+- [[Baltimore County Fleet Telematics]] — 2013 | GPS dispatch for public works, $354K/6mo
+- [[CMU Snow Plow Routing]] — academic | constraint programming CARP, 3-156% shorter routes
+- [[UK Winter Road Maintenance RL]] — 2026 | RL + VRP for salt spreading
+- [[TAC Canadian Gravel Road Survey]] — 2018 | 97 municipalities, 40,000 km gravel
 
 ---
 

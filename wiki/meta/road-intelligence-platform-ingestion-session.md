@@ -16,8 +16,11 @@ related:
 
 # Road Intelligence Platform Ingestion Session
 
-**Dates**: 2026-04-15 to 2026-04-16
-**Scope**: Full project ingestion from two executive PDF reports into a structured wiki knowledge base.
+> [!note] Session continued 2026-04-16 afternoon with major measured-baseline cascade
+> This session notes the initial April 15-16 PDF-based ingestion. Later on April 16, the laptop historical folder was copied in (660 files, 10 Tier A source pages created), the Fabric pipeline completed producing [[GPS Baseline Results 2026-04-16]] (31.8% grader deadhead measured, superseding the PDF's 24.9% estimate), and a full cascade updated 12 analytical pages + 9 source callouts + 9 entity stubs. See [[log]] `## [2026-04-16] ingest + cascade` for the full entry.
+
+**Dates**: 2026-04-15 to 2026-04-16 (initial) / 2026-04-16 afternoon (measured-baseline cascade)
+**Scope**: Full project ingestion from two executive PDF reports into a structured wiki knowledge base; later extended with historical laptop material and measured Fabric pipeline output.
 
 ## What Was Built
 

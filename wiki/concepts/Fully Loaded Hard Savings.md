@@ -24,6 +24,9 @@ sources:
 
 # Fully Loaded Hard Savings
 
+> [!important] Measured update (2026-04-16)
+> Baseline reference table below uses April 14 PDF estimates ($55-65K fuel / $140-165K fully loaded / $33-61K projection). The Fabric pipeline measures grader deadhead fuel at **$92,784 over 2 years ≈ $46K/yr**, which is ~**$115K/yr fully loaded** at 2.5x. Revised savings: graders $14K/yr at 30% reduction, $18.5K/yr at 40%, full fleet $40K-$55K/yr at 30-40%. See [[GPS Baseline Results 2026-04-16]].
+
 ## Definition
 
 Fully loaded hard savings is the success metric for the [[Road Intelligence Platform]]. It combines two ideas:
@@ -52,12 +55,13 @@ Baseline reference points from the reports:
 
 | Metric | Value | Source |
 |---|---|---|
-| Fleet-wide deadhead fuel cost (current) | $55,000 to $65,000/yr | Report 1, headline |
-| Fleet-wide deadhead fully loaded cost (current) | $140,000 to $165,000/yr | Report 1, savings section |
-| 2026 combined projection (conservative, fuel) | $33,000 | Report 2, projection table |
-| 2026 combined projection (conservative, fully loaded) | $80,000 | Report 2, projection table |
-| 2026 combined projection (moderate, fuel) | $61,000 | Report 2, projection table |
-| 2026 combined projection (moderate, fully loaded) | $150,000 | Report 2, projection table |
+| Grader deadhead fuel cost (measured) | **~$46,000/yr** ($92,784 over 2 yrs) | [[GPS Baseline Results 2026-04-16]] |
+| Grader deadhead fully loaded cost (2.5x) | **~$115,000/yr** | derived from measured fuel |
+| Full fleet deadhead ratio (including trucks) | 43.1% | [[GPS Baseline Results 2026-04-16]] |
+| 2026 savings at 30% grader deadhead reduction | $14,000/yr fuel, $35,000/yr fully loaded | measured baseline × reduction |
+| 2026 savings at 40% grader deadhead reduction | $18,500/yr fuel, $46,000/yr fully loaded | measured baseline × reduction |
+| 2026 savings full fleet at 30-40% reduction | $40,000-$55,000/yr fuel | [[GPS Baseline Results 2026-04-16]] |
+| Prior April 14 PDF estimate (superseded) | $55K-$65K fuel, $140K-$165K fully loaded | Report 1 headline |
 
 ## Connections
 

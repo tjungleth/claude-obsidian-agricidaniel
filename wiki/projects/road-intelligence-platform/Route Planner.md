@@ -26,6 +26,9 @@ sources:
 
 # Route Planner
 
+> [!important] Measured update (2026-04-16)
+> PDF estimates on this page ($15-35K fuel / $40-90K fully loaded) are superseded. Measured grader deadhead = 31.8% at ~$46K/yr fuel. Revised Route Planner value share: portion of $14K-$18.5K/yr graders at 30-40% reduction. Primary deadhead $ targets: **MG-046 Div 2 ($32,326 over 2 yrs)**, **MG-051 Div 1 ($14,650 over 2 yrs)**. Division correction: MG-046 is Div 2 (not Div 3 as Titan labeled). See [[GPS Baseline Results 2026-04-16]].
+
 ## Summary
 
 The Route Planner is the highest-value workstream in the [[Road Intelligence Platform]]. It generates fuel-minimized daily grading sequences for each division, replacing experience-based manual route selection. The focus is the May to October grading season, where demand is highest and absolute savings per shift are greatest.

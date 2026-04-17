@@ -24,6 +24,9 @@ sources:
 
 # Spare Coordination
 
+> [!important] Measured update (2026-04-16)
+> Spare deadhead figures below are from the April 14 PDF. Measured values in the Fabric pipeline confirm within ~1.5 percentage points: MG-039 31.4% (confirmed), MG-044 23.4% (PDF 22.1%), MG-041 18.9% (PDF 17.2%). Table below updated. See [[GPS Baseline Results 2026-04-16]].
+
 ## Summary
 
 Spare coordination is the second-highest-value Tier 1 workstream. 93% of multi-grader route overlap involves at least one spare grader. The core problem is not territory boundaries but dispatch coordination: spares sometimes re-grade roads the primary grader has already completed because there is no system to exclude already-graded segments from spare routes.
@@ -56,11 +59,11 @@ The 79% headline overlap rate (2,017 of 2,542) looks alarming, but the breakdown
 
 From Report 1, key finding #4: spare deadhead ratios show the widest spread in the fleet because spares have no assigned territory:
 
-| Grader | Deadhead Ratio |
-|---|---|
-| MG-039 | 31.4% |
-| MG-044 | 22.1% |
-| MG-041 | 17.2% |
+| Grader | PDF Estimate | Measured (2026-04-16) |
+|---|---|---|
+| MG-039 | 31.4% | **31.4%** (confirmed) |
+| MG-044 | 22.1% | **23.4%** |
+| MG-041 | 17.2% | **18.9%** |
 
 Without optimized deployment, a spare's deadhead depends on where it starts each day relative to where it is needed.
 

@@ -25,6 +25,9 @@ sources:
 
 # Division 1 Depot Staging
 
+> [!important] Measured update (2026-04-16)
+> MG-051 measures **43.6% deadhead** in the Fabric pipeline — the worst in the grader fleet. The depot-misalignment thesis is confirmed and intensified: MG-051 is not just a depot outlier, it is the single largest routing inefficiency in the grader fleet. MG-051 deadhead fuel = $14,650 over 2 years ≈ **$7,325/yr**. See [[GPS Baseline Results 2026-04-16]].
+
 ## Summary
 
 [[MG-051]] operates from Coaldale Shop, which is 12.6 km from the demand centroid of Division 1, with 47% of the division's roads more than 15 km from camp. This makes MG-051 the fleet's depot outlier at 6.2 km average start distance (next closest primary: MG-046 at 1.4 km).

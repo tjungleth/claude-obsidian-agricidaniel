@@ -25,6 +25,32 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-04-16] ingest + cascade | Historical Laptop Folder + GPS Baseline Results + Measured Cascade
+
+- Type: major multi-source ingest with full wiki cascade
+- **Raw sources added** (11 new):
+  - `.raw/projects/road-intelligence-platform/2026-04-16-gps-baseline-results-fabric-pipeline.md` (current authoritative)
+  - Laptop historical folder at `.raw/projects/road-intelligence-platform/historical/` (660 files; 11 Tier A sources individually registered: PRD, Refined Build Plan, Build Plan, Financial Rebase, GPS Spec, Old CLAUDE, Cowork Summary, Sent Email Data Requests, UFA Thread, Fuel Rates Reconciliation, chat summary)
+- **Source wiki pages created (12)**: [[GPS Baseline Results 2026-04-16]], [[PRD Road Intelligence Platform]], [[Road Intelligence Platform Refined Build Plan]], [[Road Intelligence Platform Build Plan]], [[Financial Rebase]], [[GPS Baseline Analysis Spec]], [[GPS Pipeline Cowork Summary]], [[Old Project CLAUDE Instructions]], [[Sent Email Data Requests 2026-04-14]], [[UFA Price and Division Correction Thread 2026-04-09]], [[Unit Fuel Rates Reconciliation]]
+- **Entity stubs created (9)**: [[Shawn Ogertschnig]], [[Graham White]], [[Cole Beck]], [[Aaron Craig]], [[Jesse]], [[Hailey Pinksen]], [[Sean MacRae]], [[Tyler Reiter]], [[Lee Martin]]
+- **Analytical pages enriched with measured baseline (12)**: [[Road Intelligence Platform]] anchor, [[Deadhead Ratio]], [[Facility Location]], [[Fully Loaded Hard Savings]], [[PyVRP]], [[Route Optimization]], [[concepts/_index|Concepts Index]], [[Fleet Efficiency Dashboard]], [[Route Planner]], [[MG-048 Investigation]], [[Spare Coordination]], [[Division 1 Depot Staging]]
+- **Source callouts added (9)**: GPS Baseline Analysis, Comprehensive Findings (both now `status: superseded`), plus PRD, Refined Build Plan, Financial Rebase, Build Plan, GPS Spec, Old CLAUDE, Cowork Summary
+- **Major factual updates**:
+  - Grader deadhead: **31.8%** (was 24.9%)
+  - Fleet-wide deadhead: **43.1%** (new, includes 38 devices)
+  - Grader deadhead fuel: **~$46K/yr** (was $55K-$65K/yr estimate)
+  - Fully loaded: **~$115K/yr** (was $140K-$165K/yr estimate)
+  - 2026 savings (graders): **$14K-$18.5K/yr** at 30-40% (was $33K-$61K/yr)
+  - Full fleet savings: **$40K-$55K/yr**
+  - Data period: **2 years** (2024-03-06 to 2026-04-09, 2.67M breadcrumbs) — not 367 days / 1.52M
+- **Division corrections from Shawn** (Apr 10): MG-046 is Div 2 (Titan label stale), MG-053 is Div 3 (no GPS), MG-042 & MG-052 are CAT 14M construction graders (no GPS by design)
+- **Title correction**: Shawn is "Manager, Public Operations" per email sig, not "Superintendent" as PRD stated
+- **New external contact**: Tyler Reiter (UFA Picture Butte)
+- **New internal contacts**: Hailey Pinksen, Sean MacRae, Lee Martin
+- **Aaron Craig** (last name confirmed) still owes road priority GIS layer — critical path for Route Planner
+- **Fabric state**: `gold_fact_grading_activity` (5,653 rows) + `gold_fact_segment_visits` (4,204 rows) built. `gold_dim_road_segment` blocked on shapefile upload.
+- Manifest updated with all new raw sources.
+
 ## [2026-04-16] autoresearch | Municipal Fleet Route Optimization Case Studies
 
 - Rounds: 2

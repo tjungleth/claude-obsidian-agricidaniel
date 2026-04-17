@@ -88,3 +88,7 @@ claude-obsidian-archive/
 # User-specific attachments
 _attachments/
 Obsidian-ClaudeCode.md
+
+# Laptop historical project folder — keep local only
+# Contains invoices, procurement RFPs, agreements, operator data (660 files)
+.raw/projects/road-intelligence-platform/historical/

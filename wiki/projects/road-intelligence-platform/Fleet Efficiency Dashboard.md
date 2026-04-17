@@ -24,6 +24,9 @@ sources:
 
 # Fleet Efficiency Dashboard
 
+> [!important] Measured update (2026-04-16)
+> Baseline reference is now **31.8% grader deadhead** (43.1% fleet-wide), not 24.9%. Gold tables `gold_fact_grading_activity` (5,653 rows) and `gold_fact_segment_visits` (4,204 rows) are built; `gold_dim_road_segment` is pending shapefile upload. See [[GPS Baseline Results 2026-04-16]].
+
 ## Summary
 
 The Fleet Efficiency Dashboard publishes grader fleet metrics on Power BI with a weekly cadence so that deadhead ratios, route overlap, and improvement are visible to operations and management. It is the visibility layer that makes all other workstreams measurable and accountable.
@@ -38,7 +41,7 @@ From the two baseline reports, the dashboard should track:
 
 - **[[Deadhead Ratio]]** per grader and per division (weekly)
 - **Route overlap** (segments touched by multiple graders per cycle)
-- **Improvement against baseline** (24.9% fleet average as the reference point)
+- **Improvement against baseline** (measured: **31.8% grader** / 43.1% fleet-wide as the reference, per [[GPS Baseline Results 2026-04-16]])
 - **Fuel consumption** per grader (L/hr and total litres)
 - **Grading hours vs deadhead hours** per unit
 
@@ -69,6 +72,7 @@ The value is indirect: visible metrics drive behavior change (operators self-cor
 - [ ] Approve dashboard deployment (Report 2, recommendation #3)
 - [ ] Define metric definitions and refresh cadence with Ryan Thomson
 - [ ] Build Power BI report from GPS baseline dataset
+- [ ] **Add season filter (grading season April-October vs blended 2-year) and report both ratios.** The 31.8% blended number inflates with winter snow-work / idle-repositioning periods; the grading-season number is what the optimizer will actually move. See [[Deadhead Ratio]] "Seasonal Interpretation".
 - [ ] Publish and communicate to operations team
 
 ## Sources

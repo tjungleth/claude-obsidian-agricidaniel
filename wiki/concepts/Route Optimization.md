@@ -26,6 +26,9 @@ sources:
 
 # Route Optimization
 
+> [!important] Measured update (2026-04-16)
+> PDF estimates on this page (24.9% deadhead, $15-35K savings, $40-90K fully loaded) are superseded. Measured **grader deadhead 31.8%** (fleet 43.1%). Grader deadhead fuel ~$46K/yr. Revised savings range: $14K-$18.5K/yr graders at 30-40% reduction. See [[GPS Baseline Results 2026-04-16]].
+
 ## Definition
 
 Route optimization is the class of problems where one or more vehicles must visit a set of locations in a sequence that minimizes an objective (total distance, travel time, fuel consumption) subject to constraints (vehicle count, time windows, capacity, start/end depots).
@@ -44,7 +47,7 @@ The solver produces a sequenced route that minimizes total deadhead travel. The 
 
 ## Why It Matters
 
-Manual route selection by operators relies on experience and local knowledge, which produces workable but sub-optimal sequences. The 24.9% fleet [[Deadhead Ratio|deadhead ratio]] is the measurable gap between current routing and what a solver can achieve.
+Manual route selection by operators relies on experience and local knowledge, which produces workable but sub-optimal sequences. The measured 31.8% grader [[Deadhead Ratio|deadhead ratio]] (43.1% fleet-wide, per [[GPS Baseline Results 2026-04-16]]) is the measurable gap between current routing and what a solver can achieve.
 
 Route optimization is the single highest-value lever in the Road Intelligence Platform, estimated at $15,000 to $35,000 per year in fuel savings and $40,000 to $90,000 in [[Fully Loaded Hard Savings|fully loaded terms]] (Report 2, Tier 1). It targets the May to October grading season, where demand is highest and absolute savings per shift are greatest.
 

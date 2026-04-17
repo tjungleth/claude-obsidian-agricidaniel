@@ -24,6 +24,9 @@ sources:
 
 # MG-048 Investigation
 
+> [!important] Measured update (2026-04-16)
+> MG-048 measured deadhead is **33.2%** (PDF said 34.3%, close match). Measured deadhead fuel $7,430 over 2 years = **~$3,715/yr** (PDF annualized claim was $7,872/yr — too high by ~2x). 23.6 L/hr fuel rate confirmed (still the highest active-divisional rate). JD telematics shows **26.6% idle** for MG-048 = highest among active divisional graders. See [[GPS Baseline Results 2026-04-16]].
+
 ## Summary
 
 [[MG-048]] (Division 5) is the fleet's most expensive single inefficiency. It deadheads more kilometres than it grades (55 km vs 36 km per shift) and burns fuel at 23.6 L/hr, the highest rate in the fleet. At 34.3% deadhead, it costs $7,872 per year in deadhead fuel alone.

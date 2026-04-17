@@ -12,13 +12,16 @@ tags:
   - road-intelligence-platform
   - fleet-analysis
   - optimization
-status: current
+status: superseded
 related:
   - "[[Road Intelligence Platform]]"
   - "[[GPS Baseline Analysis]]"
 ---
 
 # Source: Road Intelligence Platform Comprehensive Findings
+
+> [!warning] Superseded 2026-04-16
+> The Fabric pipeline ([[GPS Baseline Results 2026-04-16]]) replaces this PDF's headline claims. Measured **grader deadhead 31.8%**, fleet 43.1%. Revised 2026 combined projection: $23K-$44.5K fuel / $57.5K-$111K fully loaded / $40K-$55K full fleet (vs $33K-$61K fuel / $80K-$150K fully loaded in this report). Per-grader numbers revised. MG-046 is Div 2 (was Div 3). MG-049 is now included. Claims below preserved as historical record.
 
 **Prepared for**: [[Ryan Thomson]]
 **Prepared by**: Tony Jung

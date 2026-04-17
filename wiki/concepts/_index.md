@@ -38,7 +38,7 @@ All concept pages — ideas, patterns, and frameworks extracted from sources.
 
 ## Fleet Operations (Road Intelligence Platform)
 
-- [[Deadhead Ratio]] — percentage of active engine time spent traveling without grading; fleet baseline 24.9%
+- [[Deadhead Ratio]] — percentage of active engine time spent traveling without grading; **measured grader deadhead 31.8%** (fleet-wide 43.1%, 2 years of GPS data). See [[GPS Baseline Results 2026-04-16]]
 - [[Route Optimization]] — minimizing travel distance/time for vehicle routing problems
 - [[PyVRP]] — Python VRP solver using Hybrid Genetic Search; core tool for Route Planner workstream
 - [[Demand-Driven Scheduling]] — priority-based grading frequency replacing fixed rotations

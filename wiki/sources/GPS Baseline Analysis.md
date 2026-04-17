@@ -12,13 +12,16 @@ tags:
   - road-intelligence-platform
   - gps-data
   - fleet-analysis
-status: current
+status: superseded
 related:
   - "[[Road Intelligence Platform]]"
   - "[[Road Intelligence Platform Comprehensive Findings]]"
 ---
 
 # Source: GPS Baseline Analysis
+
+> [!warning] Superseded 2026-04-16
+> The Fabric pipeline ([[GPS Baseline Results 2026-04-16]]) replaces this PDF's headline claims. Measured grader deadhead **31.8%** (vs 24.9% here), fleet-wide **43.1%**. Measured grader deadhead fuel **~$46K/yr** (vs $55-65K here), fully loaded **~$115K/yr** (vs $140-165K). Dataset is **2 years, 2.67M breadcrumbs** (vs 367 days, 1.52M). MG-046 is Div 2 (was Div 3). MG-049 is now included in the baseline. Per-grader numbers revised. Claims below preserved as historical record.
 
 **Full title**: GPS Baseline Analysis / Grader Fleet Deadhead Report
 **Prepared for**: [[Ryan Thomson]], Director, Public Works & Utilities
